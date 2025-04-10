@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= trainer.name %>'s Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome, <%= trainer.name.trim() %>!</h1>
+    <p>Your Pokémon Collection</p>
+  </header>
+
+  <main>
+    <% if (pokemons.length > 0) { %>
+      <section>
+        <ul>
+          <% pokemons.forEach(function(pokemon) { %>
+            <li>
+              <strong><%= pokemon.name %></strong><br>
+              Level: <%= pokemon.level %><br>
+              Type: <%= pokemon.Type.name %>
+            </li>
+            <hr>
+          <% }) %>
+        </ul>
+      </section>
+    <% } else { %>
+      <p>No Pokémon found. <a href="/pokemons/add">Add a Pokémon</a></p>
+    <% } %>
+
+    <div style="margin-top: 2rem;">
+      <a href="/pokemons/add"><button>Add a Pokémon</button></a>
+      <a href="/"><button>Go Home</button></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pokémon Trainer App</p>
+  </footer>
+
+</body>
+</html>

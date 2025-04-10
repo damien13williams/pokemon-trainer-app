@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainers List</title>
+</head>
+<body>
+  <h1>Trainers List</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if (trainers && trainers.length > 0) { %>
+        <% trainers.forEach(trainer => { %>
+          <tr>
+            <td><%= trainer.name %></td>
+            <td><%= trainer.email %></td>
+          </tr>
+        <% }); %>
+      <% } else { %>
+        <tr><td colspan="2">No trainers found</td></tr>
+      <% } %>
+    </tbody>
+  </table>
+</body>
+</html>

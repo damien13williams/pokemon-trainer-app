@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/style.css">
+<h1>Add Pokémon</h1>
+<form action="/pokemons/add" method="POST">
+  <label>Name:</label>
+  <input type="text" name="name" required><br>
+
+  <label>Level:</label>
+  <input type="number" name="level" required><br>
+
+  <input type="hidden" name="trainer_id" value="<%= trainerId %>"><br>
+
+  <label>Type:</label>
+  <select name="type_id">
+    <% types.forEach(function(type) { %>
+      <option value="<%= type.id %>"><%= type.name %></option>
+    <% }) %>
+  </select><br>
+
+  <button type="submit">Add Pokémon</button>
+</form>
