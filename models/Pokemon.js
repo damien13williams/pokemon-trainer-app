@@ -8,7 +8,7 @@ const Pokemon = sequelize.define('Pokemon', {
   name: { type: DataTypes.STRING, allowNull: false },
   level: { type: DataTypes.INTEGER, allowNull: false },
 }, {
-  timestamps: false // Disable timestamps (createdAt, updatedAt)
+  timestamps: false 
 });
 
 Pokemon.belongsTo(Trainer, { foreignKey: 'trainer_id' });

@@ -118,7 +118,7 @@ app.get('/logout', (req, res) => {
 sequelize.authenticate()
   .then(() => {
     console.log('Database connected successfully.');
-    return sequelize.query('SELECT current_database();'); // Check which database we are connected to
+    return sequelize.query('SELECT current_database();'); 
   })
   .then((result) => {
     console.log('Connected to database:', result[0]);
@@ -132,7 +132,7 @@ sequelize.sync({ force: false })
   .then(() => {
     console.log("✅ Tables created or confirmed.");
     app.listen(3000, () => {
-      console.log("🚀 Server running on http://localhost:3000");
+      console.log("🚀 Server running");
     });
   })
   .catch((error) => {

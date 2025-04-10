@@ -5,7 +5,7 @@ const Type = sequelize.define('Type', {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   name: { type: DataTypes.STRING, unique: true, allowNull: false }
 }, {
-  timestamps: false // Disable timestamps (createdAt, updatedAt)
+  timestamps: false 
 });
 
 module.exports = Type;
