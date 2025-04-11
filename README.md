@@ -7,13 +7,13 @@ This project is part of the Node.js unit in the Odin Project under the "Express"
 
 ## **Application Screenshots**
 
-### **Main Library View**  
+### **Home Page**  
 ![Home Page Screenshot](images/home-page.png)  
 
-### **New Book Form**  
+### **Add Pokemon Form**  
 ![Add Pokemon Screenshot](images/add-form.png)  
 
-### **Filter Feature**  
+### **Login Form**  
 ![Login In Screenshot](images/login-form.png)  
 
 ---
