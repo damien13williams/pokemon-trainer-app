@@ -16,7 +16,7 @@ header {
   
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
   
 nav {
@@ -33,7 +33,7 @@ nav ul {
   
 nav ul li {
     display: inline-block;
-    font-size: 35px;
+    font-size: 15px;
     margin: 0 15px;
 }
   
@@ -121,5 +121,5 @@ a:hover {
 }
 
 div{
-    font-size: 35px;
+    font-size: 15px;
 }
