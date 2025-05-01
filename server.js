@@ -17,6 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static('public'));
 
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -30,6 +31,16 @@ app.use(session({
 
 app.use(trainerRoutes);
 app.use(pokemonRoutes);
+
+app.get('/', async (req, res) => {
+  try {
+    const response = await axios.get('https://pokeapi.co/api/v2/pokemon/pikachu');
+    const pokemon = response.data;
+    res.render('index', { pokemon });
+  } catch (error) {
+    res.status(500).send('Failed to fetch Pokémon');
+  }
+});
 
 app.get('/', (req, res) => {
   res.render('index');  // Render the index page
