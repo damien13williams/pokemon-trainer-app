@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0",
+    "axios": "^1.9.0",
     "body-parser": "^2.2.0",
     "connect-session-sequelize": "^7.1.7",
     "dotenv": "^16.4.7",
