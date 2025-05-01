@@ -7,7 +7,7 @@ const trainerRoutes = require('./routes/trainerRoutes');
 const pokemonRoutes = require('./routes/pokemonRoutes');
 const { sequelize, Trainer, Pokemon, Type } = require('./models'); 
 const { Op } = require('sequelize');
-
+const axios = require('axios');
 
 
 
