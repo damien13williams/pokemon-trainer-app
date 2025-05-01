@@ -42,10 +42,6 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.get('/', (req, res) => {
-  res.render('index');  // Render the index page
-});
-
 app.get('/register', (req, res) => {
   res.render('registerTrainer');
 });
