@@ -49,7 +49,6 @@ This project is part of the Node.js unit in the Odin Project under the "Express"
 ---
 
 ## **Future Improvements Planned**
-- **Pokemon API:** Use the data from Pokemon API to use in app.
 - **User Authentication:** Allow user to be authorized by passwords.
 - **Delete Functionality:** Allow a user to delete their account or pokemon in their list.
 ---
@@ -63,7 +62,6 @@ This project is part of the Node.js unit in the Odin Project under the "Express"
 
 <!-- 
 Tasks To-Do For Portfolio:
-1. Use the pokemon api to have pictures and font for the app.
 2. User Authentication for each user with a trainer account
 3. Update the CSS
 
