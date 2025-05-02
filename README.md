@@ -72,6 +72,6 @@ Tasks To-Do For Portfolio:
 
 
 Extra / Cool Stuff:
-Add a button on the homepage to link to the pokemoen game I built
-
+Add a button on the homepage to link to the pokemon game I built  ++
+Add the icon for each pokemon in the users list                   ++
 -->
