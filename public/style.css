@@ -154,7 +154,7 @@ img{
     position: relative; /* Make it eligible to use left/right/top/bottom */
     border-radius: 16px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    left:0px;
+    left:-550px;
 }
 #delete{
     background: linear-gradient(to right, #00c6ff, #0072ff);
