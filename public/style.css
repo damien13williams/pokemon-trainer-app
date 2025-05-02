@@ -153,6 +153,7 @@ img{
     max-width: 130px;
     border-radius: 16px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    margin-right: 500px;
 }
 #delete{
     background: linear-gradient(to right, #00c6ff, #0072ff);
@@ -162,7 +163,6 @@ img{
     cursor: pointer;
     width: 100px;
     height: 50px;
-    text-align: left;
     margin-top: 20px;
     transition: background 0.4s;
 }
