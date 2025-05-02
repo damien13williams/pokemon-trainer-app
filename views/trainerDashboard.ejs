@@ -16,23 +16,26 @@
 
   <main>
     <% if (pokemons.length > 0) { %>
-      <section>
-        <ul>
-          <% pokemons.forEach(function(pokemon) { %>
-            <li>
-              <strong><%= pokemon.name %></strong><br>
-              Level: <%= pokemon.level %><br>
-              Type: <%= pokemon.Type.name %>
-            </li>
-            <hr>
-          <% }) %>
-        </ul>
-      </section>
+      <h2 style="text-align: center;">Your Pokémon Team</h2>
+      <div class="pokemon-list">
+        <% pokemons.forEach(function(pokemon) { %>
+          <div class="pokemon-card">
+            <img 
+              src="https://img.pokemondb.net/sprites/sword-shield/icon/<%= pokemon.name.toLowerCase() %>.png" 
+              alt="<%= pokemon.name %>" 
+              class="pokemon-icon"
+              onerror="this.src='/images/default-icon.png'">
+            <h3><%= pokemon.name %></h3>
+            <p>Level: <%= pokemon.level %></p>
+            <p>Type: <%= pokemon.Type.name %></p>
+          </div>
+        <% }) %>
+      </div>
     <% } else { %>
-      <p>No Pokémon found. <a href="/pokemons/add">Add a Pokémon</a></p>
+      <p style="text-align: center;">No Pokémon found. <a href="/pokemons/add">Add a Pokémon</a></p>
     <% } %>
-
-    <div style="margin-top: 2rem;">
+  
+    <div style="text-align: center; margin-top: 2rem;">
       <a href="/pokemons/add"><button>Add a Pokémon</button></a>
       <a href="/"><button>Go Home</button></a>
     </div>
