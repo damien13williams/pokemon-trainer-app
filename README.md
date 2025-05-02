@@ -41,6 +41,7 @@ This project is part of the Node.js unit in the Odin Project under the "Express"
 ### **Additional Features I Made:**
 - **Trainer List:** Allows users to see a list of trainers on the app.
 - **Singular Pokemon:** There is only one specific pokemon for each trainer, so no duplicates to where two trainers can have the same pokemon. (Might change this in the future.)
+- **Pokemon API Verification:** Can only put down the correct name for the pokemon. No more adding made-up, but still need to verify teh type somone picks based on the name. 
 
 ---
 
@@ -51,6 +52,7 @@ This project is part of the Node.js unit in the Odin Project under the "Express"
 ## **Future Improvements Planned**
 - **User Authentication:** Allow user to be authorized by passwords.
 - **Delete Functionality:** Allow a user to delete their account or pokemon in their list.
+- **Authenticate Type:** Verify the type is correct with the given pokemon name the user tries to add. 
 ---
 
 ## **Learning Outcomes**
@@ -62,10 +64,14 @@ This project is part of the Node.js unit in the Odin Project under the "Express"
 
 <!-- 
 Tasks To-Do For Portfolio:
+1. Authenticate the name for pokemon so there are no made up      ++
 2. User Authentication for each user with a trainer account
-3. Update the CSS
+3. Update the CSS with pokemont fonts and colors                  ++
+4. Authenticate the type so the user cannot mix match types
+5. Remove the email from the trainer's list (only nametag now)    ++
 
 
-
+Extra / Cool Stuff:
+Add a button on the homepage to link to the pokemoen game I built
 
 -->
