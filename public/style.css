@@ -146,6 +146,20 @@ img{
     width: 50px;
     height: 50px;
 }
+
+#delete{
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.4s;
+}
+
+#delete:hover{
+    background: linear-gradient(to right, #ff6ec7, #ff3cac);
+}
 /* div{
     font-size: 15px;
 }

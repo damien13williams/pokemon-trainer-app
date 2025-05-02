@@ -56,4 +56,23 @@ router.post('/pokemons/add', async (req, res) => {
   }
 });
 
+// DELETE 
+router.post('/pokemons/:id/delete', async (req, res) => {
+  try {
+    const pokemonId = req.params.id;
+    const pokemon = await Pokemon.findByPk(pokemonId);
+
+    if (!pokemon) {
+      return res.status(404).send('Pokémon not found');
+    }
+
+    const trainerId = pokemon.trainer_id;
+    await pokemon.destroy();
+    res.redirect(`/trainers/${trainerId}/pokemons`);
+  } catch (error) {
+    console.error('Error deleting Pokémon:', error);
+    res.status(500).send('Error deleting Pokémon');
+  }
+});
+
 module.exports = router;
