@@ -66,9 +66,10 @@ This project is part of the Node.js unit in the Odin Project under the "Express"
 Tasks To-Do For Portfolio:
 1. Authenticate the name for pokemon so there are no made up      ++
 2. User Authentication for each user with a trainer account
-3. Update the CSS with pokemont fonts and colors                  ++
+3. Update the CSS with pokemon fonts and colors                  ++
 4. Authenticate the type so the user cannot mix match types
 5. Remove the email from the trainer's list (only nametag now)    ++
+6. Delete pokemon button                                          ++
 
 
 Extra / Cool Stuff:
