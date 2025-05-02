@@ -28,7 +28,7 @@
             <h3><%= pokemon.name %></h3>
             <p>Level: <%= pokemon.level %></p>
             <p>Type: <%= pokemon.Type.name %></p>
-            <form action="/pokemons/<%= pokemon.id %>/delete" method="POST" onsubmit="return confirm('Are you sure you want to delete <%= pokemon.name %>?');">
+            <form id="deleteform" action="/pokemons/<%= pokemon.id %>/delete" method="POST" onsubmit="return confirm('Are you sure you want to delete <%= pokemon.name %>?');">
               <button type="submit" id="delete">Delete</button>
           </form>
           </div>
