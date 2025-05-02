@@ -150,11 +150,11 @@ img{
 #deleteform{
     background-color: #2b2b3d;
     padding: 25px;
-    max-width: 130px;
+    max-width: 100px;
     position: relative; /* Make it eligible to use left/right/top/bottom */
     border-radius: 16px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    left:-550px;
+    left:-600px;
 }
 #delete{
     background: linear-gradient(to right, #00c6ff, #0072ff);
@@ -165,6 +165,7 @@ img{
     width: 100px;
     height: 50px;
     margin-top: 20px;
+    text-align: center;
     transition: background 0.4s;
 }
 
